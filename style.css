@@ -1,0 +1,120 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@100&family=Space+Mono&display=swap');
+
+
+
+body{
+
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 90%;
+ 
+}
+
+ img{
+   max-width: 90%;
+    display: block;
+    margin: auto;
+    padding: 2em 0;
+}
+
+/* Typography */
+h2{
+    font-family: Inconsolata;
+    font-size: 1em;
+    font-weight:700;
+    line-height: 1.1em;
+    word-spacing: 0.1em;
+    color: #333333;
+    margin-top: 1em;
+}
+
+.headText{
+    font-family: Space Mono;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: -0.035em;
+    text-align: left;
+    }
+
+.paraText{
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -0.035em;
+    text-align: left;
+    }
+
+/* Layout */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > button{
+    width: auto;
+    padding:1rem 1rem;
+    background: #333333;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    word-spacing: 0.3rem;
+    border: none;
+    margin-right: auto;
+}
+
+
+footer{
+    text-align: center;
+    font-family: monteserrat;
+    color: #BDBDBD;
+    font-size: 14px;
+    /* margin-top: 45%; */
+
+}
+
+
+/* For big Screen */
+@media (min-width:950px){
+    .flex-container{
+        margin-top: 5em;
+        flex-direction:row;
+        align-items: center;
+    }
+    img{
+        width: 50%;
+        height: 430px;
+
+    }
+   .flex-container > .container{
+       margin: auto 5.5rem;
+       padding: 2em;
+    }
+    .headText{
+        font-size: 3rem;
+        word-spacing: 1rem;
+        margin-bottom: 1em;
+    }
+    .paraText{
+        font-size: 24px;
+        padding-right: 5em;
+        line-height: 2.5rem;
+        font-weight: none;
+        margin-bottom: 2em;
+    }
+    .container > button{
+        padding: 1em;
+        word-spacing: 0.1rem;
+        font-size: 14px;
+    }
+    footer{
+        margin-top: 60px;
+    }
+}
